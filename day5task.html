@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style type="text/css">
+		body
+	{
+		background:linear-gradient(to left, green, white, orange);
+	}	
+	</style>
+	<form method="post" action="">
+</head>
+<body>
+	<div align="center">
+		<h1>Registration Form</h1>
+		<form method="post" action="">
+		<input type="text" placeholder="Enter Your Name" size="25" id="nm">
+		<br><br>
+		<input type="number" placeholder="Enter Your Age" size="25" id="age" maxlength="3">
+		<br><br>
+		<input type="email" placeholder="Enter Your Email ID" size="25" id="email">
+		<br><br>
+		<input type="Button" value="REGISTER" onclick="userDetails()">
+	</div>
+</form>
+<div align=""></div>
+<div id="data"></div>
+<script type="text/javascript">
+	function userDetails()
+	{
+		var userName = document.getElementById('nm').value;
+		var userAge = document.getElementById('age').value;
+		var userEmail = document.getElementById('email').value;
+
+		document.getElementById('data').innerHTML="<h1>Name : "+ userName+"<br>Age: "+userAge+"<br>Email: "+userEmail+"</h1>";
+	}
+</script>
+</div>
+</body>
+</html>
