@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<style type="text/css">
+body{
+background: #03001e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.time{
+color : white;
+		font-size : 50px;
+		font-family: "Trebuchet MS";
+		font-weight: bold;
+		font-style: italic;
+		text-shadow: 5px 5px 10px black;
+
+}
+</style>
+</head>
+<body>
+<br>
+<div align="center">
+<span class="time" id="time">02:42PM</span><br>
+<span class="date"> Friday 11 NOV 2020</span><br>
+<marquee class="name" scrollamount="20" behavior="alternate">&copy; Designed by Harshal Milmile</marquee>
+</div>
+<script type="text/javascript">
+const d = new date();
+var h = d.getHours();
+var m = d.getMinutes();
+document.getElememtById('time')
+</script>
+
+</body>
+</html>
