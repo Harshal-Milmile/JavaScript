@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loops In JavaScript</title>
+</head>
+<body>
+	<div id="while" style="font-size: 80px"></div>
+	<div id="for" style="font-size: 80px"></div>
+	<script type="text/javascript">
+		var num=parseInt(prompt("Enter the no."));
+		var r=1;
+		var whiledata="";
+		
+		while(r<=num){
+ 
+			whiledata +=r;
+			whiledata += "<br>";
+			r++;
+		}
+		document.getElementById('while').innerHTML=whiledata;
+			
+	</script>
+
+</body>
+</html>
