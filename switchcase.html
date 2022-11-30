@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch Case</title>
+	<style type="text/css">
+		body
+		{
+			background: #e1eec3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f05053, #e1eec3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f05053, #e1eec3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		}
+
+		h1 {
+  background-color: black;
+  color: white;
+  align-content: center;
+          }
+
+		.out{
+			align-content: center;
+			background-color: blue;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>Arithmatic Oprations by using 'Switch'</h1>
+	<div id="out" align="center" style="font-size: 50px"></div>
+	<script type="text/javascript">
+		
+		var choice= prompt("Enter your choice (+,-,*,/)");
+		var num1=parseInt(prompt("Enter the 1st no."));
+		var num2=parseInt(prompt("Enter the 2nd no."));
+
+		switch(choice)
+		{
+           case '+':
+           var result=num1+num2;
+           document.getElementById('out').innerHTML="Addition of "+num1+" & "+num2+" is : "+result;
+           break;
+
+           case '-':
+           var result=num1-num2;
+           document.getElementById('out').innerHTML="Substraction of "+num1+" & "+num2+" is : "+result;
+           break;
+
+           case '*':
+           var result=num1*num2;
+           document.getElementById('out').innerHTML="Multiplication of "+num1+" & "+num2+" is : "+result;
+           break;
+
+           case '/':
+           var result=num1/num2;
+           document.getElementById('out').innerHTML="Division of "+num1+" & oo"+num2+" is : "+result;
+           break;
+
+           default:
+           var result = "You have entered wrong choice !!!";
+           document.getElementById('out').innerHTML=result;
+           break;
+
+
+
+		
+		}
+	</script>
+
+</body>
+</html>
