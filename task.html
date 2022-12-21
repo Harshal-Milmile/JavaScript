@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task</title>
+</head>
+<body>
+	<div align="center">
+		<h1>DOM - Style Tutorial </h1>
+		<span id="data">The Taj Mahal 'Crown of the Palace' is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1631 by the Mughal emperor Shah Jahan (r. 1628–1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.</span>
+		<br><br><br>
+
+		<button onclick="domStyle(1)"> Font Size Small</button>
+		<button onclick="domStyle(2)"> Font Size Medium</button>
+		<button onclick="domStyle(3)"> Font Size Large</button>
+		<button onclick="domStyle(4)"> Underline Text</button>
+		<button onclick="domStyle(5)"> Bold Text</button>
+		<button onclick="domStyle(6)"> Italic Text</button>
+		<input type="color" id="colorValue" onchange="changeColor()">
+		<br><br>
+		<button onclick="window.location ='dom-style.html'">Clear Formatting</button>
+	</div>
+<script type="text/javascript">
+	function domStyle(choice)
+	{
+		switch(choice){
+
+			choice 1: document.getElementById("data").style.fontSize = "15px";
+	
+            choice 2: document.getElementById("data").style.fontSize = "30px";
+	
+		    choice 3: document.getElementById("data").style.fontSize = "40px";
+
+		    choice 4: document.getElementById("data").style.textDecoration = "underline";
+	
+		    choice 5: document.getElementById("data").style.fontWeight = "bold";
+	
+		    choice 6: document.getElementById("data").style.fontStyle = "italic":
+
+		}
+		
+		function changeColor(){
+		var color = document.getElementById("colorValue").value;
+		document.getElementById("data").style.color = "color";
+	
+}
+    
+</script>
+</body>
+</html>
